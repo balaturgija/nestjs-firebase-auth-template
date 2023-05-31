@@ -12,7 +12,7 @@ export class FirebaseAuthStrategy extends PassportStrategy(Strategy) {
     });
   }
 
-  async validate(token: any) {
+  async validate(token: string) {
     try {
       return await auth().verifyIdToken(token, true);
     } catch (error) {
