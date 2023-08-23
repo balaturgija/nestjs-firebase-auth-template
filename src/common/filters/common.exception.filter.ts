@@ -1,6 +1,6 @@
 import { ArgumentsHost, ExceptionFilter } from '@nestjs/common';
-import { isResponseObject } from '../types/common-response-message.type.guard';
-import { CommonFilterResponse } from '../types/common-filter.response';
+
+import { CommonFilterResponse, isResponseObject } from '../types';
 
 export class CommonExceptionFilter implements ExceptionFilter {
   catch(exception: any, host: ArgumentsHost) {

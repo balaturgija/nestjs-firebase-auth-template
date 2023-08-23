@@ -1,6 +1,8 @@
 import { ArgumentsHost, Catch } from '@nestjs/common';
-import { UnauthorizedAccountException } from './exceptions/unauthorized-account.exception';
-import { CommonExceptionFilter } from '../common/filters/common.exception.filter';
+
+import { CommonExceptionFilter } from '~modules/common';
+
+import { UnauthorizedAccountException } from '../exceptions';
 
 @Catch(UnauthorizedAccountException)
 export class AuthExceptionFilter extends CommonExceptionFilter {

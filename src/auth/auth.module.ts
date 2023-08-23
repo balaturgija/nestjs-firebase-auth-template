@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { APP_FILTER } from '@nestjs/core';
-import { AuthExceptionFilter } from './auth.exeption.filter';
+
+import { AuthExceptionFilter } from './filters';
 
 @Module({
   providers: [
